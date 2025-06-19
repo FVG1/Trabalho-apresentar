@@ -1,29 +1,46 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    text-align: center;
-    padding: 50px;
+* {
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1a7063;
+  }
+}
+* h1,
+p {
+  text-align: center;
+}
+#video-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+a {
+  color: #ffff;
+  text-decoration: none;
 }
 
-.video-container {
-    background-color: white;
-    border-radius: 10px;
-    padding: 30px;
-    display: inline-block;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.logo {
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
-.like-section {
-    margin-top: 20px;
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  background: #114f45;
+  background-size: cover;
 }
 
-.like-button {
-    font-size: 30px;
-    cursor: pointer;
-    transition: color 0.3s;
-    user-select: none;
+.nav-list {
+  list-style: none;
+  display: flex;
 }
 
-.like-button.liked {
-    color: #007bff;
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 56px;
 }
