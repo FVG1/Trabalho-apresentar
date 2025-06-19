@@ -27,3 +27,9 @@ body {
 .like-button.liked {
     color: #007bff;
 }
+
+.logo {
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}

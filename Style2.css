@@ -216,3 +216,31 @@ body {
     width: 400px;
   }
 }
+
+.logo {
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.botao-container {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+        
+.botao {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+        
+.botao:hover {
+  background-color: #45a049;
+}
+

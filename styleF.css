@@ -79,3 +79,9 @@ button:hover {
 .botao:hover {
   background-color: #45a049;
 }
+
+.logo {
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
