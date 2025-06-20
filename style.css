@@ -44,3 +44,18 @@ nav {
   letter-spacing: 3px;
   margin-left: 56px;
 }
+
+.like-section {
+    margin-top: 20px;
+}
+
+.like-button {
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s;
+    user-select: none;
+}
+
+.like-button.liked {
+    color: #007bff;
+}
