@@ -2,14 +2,14 @@ const API_URL = 'http://localhost:3000/tutorials';
 
 let tutorials = [];
 
-const isAdmin = document.body.id === 'page-admin';
-const isUsuario = document.body.id === 'page-usuario';
+//const isAdmin = document.body.id === 'page-admin';
+//const isUsuario = document.body.id === 'page-usuario';
 
 async function fetchTutorials() {
   const res = await fetch(API_URL);
   tutorials = await res.json();
-  if (isAdmin) renderTutorialsAdmin();
-  if (isUsuario) renderCarousel();
+  renderTutorialsAdmin();
+  renderCarousel();
 }
 
 async function saveTutorial(tutorial) {
@@ -33,9 +33,6 @@ async function deleteTutorial(id) {
   await fetch(`${API_URL}/${id}`, { method: 'DELETE' });
   await fetchTutorials();
 }
-
-// ADMIN
-if (isAdmin) {
   const form = document.getElementById('tutorial-form');
   const titleInput = document.getElementById('title');
   const descInput = document.getElementById('description');
@@ -106,10 +103,7 @@ if (isAdmin) {
   });
 
   fetchTutorials();
-}
 
-// USUÁRIO
-if (isUsuario) {
   const carouselTrack = document.getElementById('carousel-track');
   const prevBtn = document.getElementById('prev-btn');
   const nextBtn = document.getElementById('next-btn');
@@ -183,4 +177,3 @@ if (isUsuario) {
 
   window.addEventListener('resize', updateCarouselPosition);
   fetchTutorials();
-}
