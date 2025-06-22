@@ -1,0 +1,20 @@
+{
+  "artigos": 
+  [
+    {
+      "id": 1,
+      "titulo": "O impacto das fake news",
+      "conteudo": "Um artigo sobre como as fake news afetam a sociedade e a importância da checagem de fatos."
+    },
+    {
+      "id": 2,
+      "titulo": "Educação midiática nas escolas",
+      "conteudo": "Discutindo a inclusão da educação digital e midiática na grade curricular."
+    },
+    {
+      "id": 3,
+      "titulo": "Redes sociais e manipulação de opinião",
+      "conteudo": "Como algoritmos moldam o conteúdo consumido e influenciam a opinião pública."
+    }
+  ]
+}

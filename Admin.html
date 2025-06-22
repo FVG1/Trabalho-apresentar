@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin - Gerenciar Artigos</title>
+  <link rel="stylesheet" href="styleA.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-aJvABW5V+9R1+PZq8cN+YBtKg6d+jsPL0jBeb2w0HgF6v+TKwGqz8IgJkBN3B+yINX0P8qOzOkkUbeFsPltkEg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      background-color: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    h1 {
+      color: #196774;
+      text-align: center;
+    }
+
+    form {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      max-width: 500px;
+      margin: 2rem auto;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    form button {
+      margin-top: 1.5rem;
+      background-color: #196774;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #144f5e;
+    }
+
+    .artigos-container {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+
+    .delete-icon {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      color: #EF6024;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .delete-icon:hover {
+      color: #c1440c;
+    }
+
+    .card h3 {
+      margin: 0 0 0.5rem;
+      color: #196774;
+    }
+
+    .card p {
+      margin: 0;
+      color: #363432;
+    }
+  </style>
+</head>
+<body>
+  <h1>Gerenciar Artigos</h1>
+  <form id="form-artigo">
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" name="titulo" required />
+
+    <label for="conteudo">Conteúdo:</label>
+    <textarea id="conteudo" name="conteudo" rows="5" required></textarea>
+
+    <button type="submit">Adicionar Artigo</button>
+  </form>
+
+  <section id="lista-artigos" class="artigos-container">
+  </section>
+
+  <script type="module" src="admin.js"></script>
+</body>
+</html>

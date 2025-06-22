@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artigos</title>
+  <link rel="stylesheet" href="styleA.css" />
+  <style>
+    :root {
+      --cor-fundo: #f4f4f4;
+      --cor-card: #ffffff;
+      --cor-titulo: #196774;
+      --cor-texto: #363432;
+      --cor-destaque: #F0941F;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--cor-fundo);
+    }
+
+    header {
+      background-color: var(--cor-titulo);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .artigos-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .card {
+      background-color: var(--cor-card);
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h3 {
+      color: var(--cor-titulo);
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: var(--cor-texto);
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Artigos Recentes</h1>
+  </header>
+
+  <main>
+    <section id="lista-artigos" class="artigos-container">
+      <!-- Artigos carregados dinamicamente aqui -->
+    </section>
+  </main>
+    <div id="check-result"></div>
+    </div>
+    <div class="botao-container">
+    <a href="Admin.html" class="botao">Ir para outra tela</a>
+    </div>
+    <div class="botao-container2">
+    <a href="index.html" class="botao2">Ir para home</a>
+    </div>
+  <script type="module" src="scriptA.js"></script>
+</body>
+</html>
